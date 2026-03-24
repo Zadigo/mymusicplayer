@@ -1,0 +1,50 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme static {
+  --font-title: 'Barlow', sans-serif;
+  --font-sans: 'Albert Sans', sans-serif;
+
+  --color-green-50: #EBEBF1;
+  --color-green-100: #D6D7E3;
+  --color-green-200: #999cba;
+  --color-green-300: #70749e;
+  --color-green-400: #5b6091;
+  --color-green-500: #323875;
+  --color-green-600: #30356f;
+  --color-green-700: #2b3063;
+  --color-green-800: #232752;
+  --color-green-900: #1e2246;
+  --color-green-950: #191c3b;
+}
+
+.scrollbar-none {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-title);
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.5s ease-in-out;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(4px);
+  transform: scale(0.95);
+}
+
+.page-enter-to,
+.page-leave-from {
+  opacity: 1;
+  filter: blur(0);
+  transform: scale(1);
+}
