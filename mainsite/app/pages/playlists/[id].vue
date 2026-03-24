@@ -49,7 +49,7 @@
 </template>
 
 <script setup lang="ts">
-import { usePlaylistFixture } from '~/data/__fixtures__'
+import { usePlaylistFixture } from '~/composables/fixtures'
 import type { BaseSong } from '~/types'
 
 definePageMeta({

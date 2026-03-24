@@ -34,3 +34,9 @@
     </nuxt-card>
   </section>
 </template>
+
+<script lang="ts" setup>
+import { useFeedFixture } from '~/composables/fixtures'
+
+const { items } = useFeedFixture(200)
+</script>

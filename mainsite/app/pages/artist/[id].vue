@@ -97,7 +97,7 @@
 </template>
 
 <script setup lang="ts">
-import { usePlaylistFixture, useSongFixture } from '~/data/__fixtures__'
+import { usePlaylistFixture, useSongFixture } from '~/composables/fixtures'
 
 definePageMeta({
   label: 'Artist',

@@ -17,7 +17,7 @@
 </template>
 
 <script lang="ts" setup>
-import { usePlaylistFixture } from '~/data/__fixtures__'
+import { usePlaylistFixture } from '~/composables/fixtures'
 
 definePageMeta({
   label: 'Explorer Playlists',
